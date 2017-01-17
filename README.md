@@ -2,8 +2,35 @@
 A Cheat Sheet to know what you can find in your Request Object
 
 
-object(Symfony\Component\HttpFoundation\Request)#4 (21) {
-  ["attributes"]=>
+## Symfony\Component\HttpFoundation\Request
+### Vars
+
+|                        |      Class                                    |
+|------------------------|-----------------------------------------------|
+| attributes             | Symfony\Component\HttpFoundation\ParameterBag |
+| request                | Symfony\Component\HttpFoundation\ParameterBag |
+| query                  | Symfony\Component\HttpFoundation\ParameterBag |
+| server                 | Symfony\Component\HttpFoundation\ServerBag    |
+| files                  | Symfony\Component\HttpFoundation\FileBag      |
+| cookies                | Symfony\Component\HttpFoundation\ParameterBag |
+| headers                | Symfony\Component\HttpFoundation\HeaderBag    |
+| content                | string                                        |
+| languages              | string                                        |
+| charset                | string                                        |
+| encodings              | string                                        |
+| acceptableContentTypes | string                                        |
+| pathInfo               | string                                        |
+| requestUri             | string                                        |
+| baseUrl                | string                                        |
+| basePath               | string                                        |
+| method                 | string                                        |
+| format                 | string                                        |
+| session                | Symfony\Component\HttpFoundation\Session\Session |
+| locale                 | string                                        |
+| defaultLocale          | string                                        |
+
+### attributes
+
   object(Symfony\Component\HttpFoundation\ParameterBag)#7 (1) {
     ["parameters":protected]=>
     array(6) {
@@ -28,19 +55,19 @@ object(Symfony\Component\HttpFoundation\Request)#4 (21) {
       }
     }
   }
-  ["request"]=>
+###  ["request"]=>
   object(Symfony\Component\HttpFoundation\ParameterBag)#5 (1) {
     ["parameters":protected]=>
     array(0) {
     }
   }
-  ["query"]=>
+###  ["query"]=>
   object(Symfony\Component\HttpFoundation\ParameterBag)#6 (1) {
     ["parameters":protected]=>
     array(0) {
     }
   }
-  ["server"]=>
+###  ["server"]=>
   object(Symfony\Component\HttpFoundation\ServerBag)#10 (1) {
     ["parameters":protected]=>
     array(34) {
@@ -114,13 +141,13 @@ object(Symfony\Component\HttpFoundation\Request)#4 (21) {
       int(1481277117)
     }
   }
-  ["files"]=>
+###  ["files"]=>
   object(Symfony\Component\HttpFoundation\FileBag)#9 (1) {
     ["parameters":protected]=>
     array(0) {
     }
   }
-  ["cookies"]=>
+###  ["cookies"]=>
   object(Symfony\Component\HttpFoundation\ParameterBag)#8 (1) {
     ["parameters":protected]=>
     array(8) {
@@ -142,7 +169,7 @@ object(Symfony\Component\HttpFoundation\Request)#4 (21) {
       string(288) "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     }
   }
-  ["headers"]=>
+###  ["headers"]=>
   object(Symfony\Component\HttpFoundation\HeaderBag)#11 (2) {
     ["headers":protected]=>
     array(12) {
@@ -211,29 +238,29 @@ object(Symfony\Component\HttpFoundation\Request)#4 (21) {
     array(0) {
     }
   }
-  ["content":protected]=>
+###  ["content":protected]=>
   NULL
-  ["languages":protected]=>
+###  ["languages":protected]=>
   NULL
-  ["charsets":protected]=>
+###  ["charsets":protected]=>
   NULL
-  ["encodings":protected]=>
+###  ["encodings":protected]=>
   NULL
-  ["acceptableContentTypes":protected]=>
+###  ["acceptableContentTypes":protected]=>
   NULL
-  ["pathInfo":protected]=>
+###  ["pathInfo":protected]=>
   string(17) "/video/view/11832"
-  ["requestUri":protected]=>
+###  ["requestUri":protected]=>
   string(17) "/video/view/11832"
-  ["baseUrl":protected]=>
+###  ["baseUrl":protected]=>
   string(0) ""
-  ["basePath":protected]=>
+###  ["basePath":protected]=>
   NULL
-  ["method":protected]=>
+###  ["method":protected]=>
   string(3) "GET"
-  ["format":protected]=>
+###  ["format":protected]=>
   NULL
-  ["session":protected]=>
+###  ["session":protected]=>
   object(Symfony\Component\HttpFoundation\Session\Session)#56 (3) {
     ["storage":protected]=>
     object(Symfony\Component\HttpFoundation\Session\Storage\NativeSessionStorage)#57 (5) {
@@ -310,8 +337,8 @@ object(Symfony\Component\HttpFoundation\Request)#4 (21) {
     ["attributeName":"Symfony\Component\HttpFoundation\Session\Session":private]=>
     string(10) "attributes"
   }
-  ["locale":protected]=>
+###  ["locale":protected]=>
   NULL
-  ["defaultLocale":protected]=>
+###  ["defaultLocale":protected]=>
   string(2) "fr"
 }
